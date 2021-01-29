@@ -14,6 +14,13 @@ def name(value):
     val = {"value": value}
     return jsonify(val)
 
+
+@app.route('/pearljam')
+def pearljam():
+    val = {"value": "pearljam"}
+    return jsonify(val)
+
+
 @app.route('/bob')
 def bob():
     val = {"value": "bob"}
